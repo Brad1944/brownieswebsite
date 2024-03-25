@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="public/fonts/fonts.css">
+    <script src="js/slideshow.js"></script>
+    <title>Brownies Kalingga</title>
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+    
+</head>
+<body onunload="setInterval(showSlides(1), 2000)">
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="public/assets/logo.png" alt="">
+            <div class="title">Brownies Kalingga</div>
+        </div>
+        <div class="navbar-right">
+            <a href="#default.asp">Home</a>
+            <a href="#news.asp">News</a>
+            <a href="#contact.asp">Contact</a>
+            <a href="#about.asp">About</a>
+        </div>
+    </div>
+
+    <div class="filler"> </div>
+
+    <div class="slideshow">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="slide first fade">
+          <img src="public/assets/slideshow/bolen.jpg" alt="Slideshow Image">
+          <div class="text">Bolen</div>
+        </div>
+      
+        <div class="slide fade">
+            <img src="public/assets/slideshow/pandanroll.jpg" alt="Slideshow Image">
+            <div class="text">Pandan Roll Cake</div>
+        </div>
+      
+        <div class="slide fade">
+            <img src="public/assets/slideshow/stickbrownies.jpg" alt="Slideshow Image">
+            <div class="text">Stick Brownies</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="dotcont">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="second-segment">
+        <div class="cardboard">
+            <img src="public/assets/cardboard/stickbrownies.jpg" alt="image">
+            <div class="cb-title">Stick Brownies</div>
+            <div class="cb-content">Kudapan renyah yang cocok dimakan kapanpun dan dimanapun</div>
+        </div>
+        <div class="cardboard">
+            <img src="public/assets/cardboard/pandan.jpg" alt="image">
+            <div class="cb-title">Pandan Roll Cake</div>
+            <div class="cb-content">Kue roll dengan rasa pandan yang empuk dengan krim yang lembut</div>
+        </div>
+        <div class="cardboard">
+            <img src="public/assets/cardboard/dunno.jpg" alt="image">
+            <div class="cb-title">Bolen</div>
+            <div class="cb-content">Jajanan dengan luar renyah berisi pisang dan coklat serta keju yang gak pelit</div>
+        </div>
+    </div>
+    <div class="third-segment">
+        <a>Siap untuk membeli? Kontak kami langsung dibawah ini 😊</a>
+        <div class="buy-container" onclick="window.location='https://wa.me/+6285236641001';">
+            <a>Pesan Sekarang!</a>
+            <img src="public/assets/whatsapp.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
